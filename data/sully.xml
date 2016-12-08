@@ -1,0 +1,12 @@
+<MOVIES_DETAILS>
+        <MOVIE>
+           <title>Sully</title>
+           <release_date>November 23, 2016</release_date>
+          <director>Clint Eastwood</director>
+          <cast>Tom Hanks, Laura Linney, Anna Gunn, Aaron Eckhart, Autumn Reeser, Jerry Ferrara, Sam Huntington, Holt McCallany</cast>
+          <language>English</language>
+          <details>On January 15, 2009, the world witnessed the "Miracle on the Hudson" when Captain "Sully" Sullenberger glided his disabled plane onto the frigid waters of the Hudson River, saving the lives of all 155 aboard. However, even as Sully was being heralded by the public and the media for his unprecedented feat of aviation skill, an investigation was unfolding that threatened to destroy his reputation and his career.</details>
+       
+          
+  </MOVIE>
+   </MOVIES_DETAILS>
