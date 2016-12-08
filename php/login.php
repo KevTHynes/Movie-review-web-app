@@ -123,31 +123,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 					<p>Forgot your password? <a href="changepassword.php">Click here to reset your Password</a>.</p>
 				</div>
 				
-				<div style="color:black;text-align:center;">
-					<h1 > OR </h1>
-				</div>
 				
-				
-				
-				<div>
-					<a 
-						 href="https://www.facebook.com/" class="btn btn-info btn-sm" role="button">
-							<img src="login_fb.png" alt="facebook" style="width:500px;height:100px;">
-					
-						 </a>
-				
-				</br>
-				
-					<a href="https://twitter.com/?lang=en" class="btn btn-info btn-sm" role="button">
-						<img src="twitter login.png" alt="facebook" style="width:500px;height:100px;">
-				</a>
-				
-				</br>
-				
-					<a href="https://mail.google.com" class="btn btn-info btn-sm" role="button">
-						<img src="google login.png" alt="facebook" style="width:500px;height:100px;">
-		</a>
-				</div>
 			</section>
 	
 			  

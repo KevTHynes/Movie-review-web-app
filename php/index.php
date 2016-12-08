@@ -28,7 +28,7 @@ if(!file_exists("../data/user.xml")){
 			<nav class="navbar navbar-inverse  ">
 				<div class="container-fluid">
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.php">Home</a>
+						<a class="navbar-brand" href="index.html">Home</a>
 					</div>
 					
 					<ul class="nav navbar-nav">
@@ -64,8 +64,7 @@ if(!file_exists("../data/user.xml")){
 				<div class="sidebar">
 					<div class="sidebar_item">
 						<h2>Message</h2>
-						<p>Welcome,
-							<?php echo $_SESSION['username']; ?> to our new website</p>
+						<p>Welcome</p>
 					</div>
 				</div>
 				<div class="sidebar">
