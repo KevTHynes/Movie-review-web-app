@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml-transitional.dtd">
+<!DOCTYPE html>
 	<html xmlns="http://www.w3.org/1999/xhtml">
 
 	<head>
@@ -32,12 +31,7 @@
 						<a class="navbar-brand" href="php/nologin.php">Review a movie</a>
 					</div>
 
-					<form class="navbar-form navbar-left">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
-						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
-					</form>
+				
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="php/register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 						<li><a href="php/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -48,9 +42,9 @@
 			<div id="site_content">
 
 				<div class="slideshow">
-				
-						<li class="show"><img width="100%" height="300" src="/images/home_1.jpg" alt="&quot;Rent all the latest DVD&quot;" /></li>
-				
+
+					<img width="100%" height="300" src="/images/home_1.jpg" alt="&quot;Rent all the latest DVD&quot;" />
+
 				</div>
 			</div>
 
@@ -65,113 +59,23 @@
         </div>
 
      <div class="row">
-        <div class="col-sm-4">
-         <a target="_blank"><img src="/images/2.jpg" alt="Movies" width="300" height="300"></a>
-                  <div class="desc"><b>Elysium</b></div>
-                  <!--//source: http://www.w3schools.com/ajax/tryit.asp?filename=tryajax_first-->
-
-                    <div id="demo"></div>
-
-                    <button type="button" onclick="loadXMLDoc()">View Details</button>
-
-                    <script>
-                      function loadXMLDoc() {
-                        var xhttp = new XMLHttpRequest();
-                        xhttp.onreadystatechange = function() {
-                          if (xhttp.readyState == 4 && xhttp.status == 200) {
-                            document.getElementById("demo").innerHTML = xhttp.responseText;
-                          }
-                        };
-                        xhttp.open("GET", "details1.xml", true);
-                        xhttp.send();
-                      }
-                    </script>
+        <div class="col-sm-8">
+         <img width="100%" height="300" src="/images/greed.jpg" alt="greed" />
        </div>
-      <div class="col-sm-4">
-       <a target="_blank"><img src="/images/3.jpg" alt="Movies" width="300" height="300" href="https://www.youtube.com/watch?v=Aojd0pE_MJ8"></a>
-								<div class="desc"><b>Snitch</b></div>
 
-
-									<div id="demo1"></div>
-
-									<button type="button" onclick="loadXMLDoc1()">View Details</button>
-
-									<script>
-										function loadXMLDoc1() {
-											var xhttp = new XMLHttpRequest();
-											xhttp.onreadystatechange = function() {
-												if (xhttp.readyState == 4 && xhttp.status == 200) {
-													document.getElementById("demo1").innerHTML = xhttp.responseText;
-												}
-											};
-											xhttp.open("GET", "details2.xml", true);
-											xhttp.send();
-										}
-									</script>
-       </div>
         <div class="col-sm-4">
           <h2>Message</h2>
 						<p>Welcome to our new website</p>
-       </div>
-       </div>
-
-
-       <div class="row">
-        <div class="col-sm-4">
-         <a target="_blank"><img src="/images/4.jpg" alt="Movies" width="300" height="300"></a>
-							<div class="desc"><b>FAST AND FURIOUS 6</b></div>
-
-
-								<div id="demo2"></div>
-
-								<button type="button" onclick="loadXMLDoc2()">View Details</button>
-
-								<script>
-									function loadXMLDoc2() {
-										var xhttp = new XMLHttpRequest();
-										xhttp.onreadystatechange = function() {
-											if (xhttp.readyState == 4 && xhttp.status == 200) {
-												document.getElementById("demo2").innerHTML = xhttp.responseText;
-											}
-										};
-										xhttp.open("GET", "details3.xml", true);
-										xhttp.send();
-									}
-								</script>
-       </div>
-      <div class="col-sm-4">
-       <a target="_blank"><img src="/images/PiratesOfCaribbean.jpg" alt="Movies" width="300" height="300"></a>
-							<div class="desc"><b>Pirates Of Caribbean</b></div>
-
-
-								<div id="demo3"></div>
-
-								<button type="button" onclick="loadXMLDoc3()">View Details</button>
-
-								<script>
-									function loadXMLDoc3() {
-										var xhttp = new XMLHttpRequest();
-										xhttp.onreadystatechange = function() {
-											if (xhttp.readyState == 4 && xhttp.status == 200) {
-												document.getElementById("demo3").innerHTML = xhttp.responseText;
-											}
-										};
-										xhttp.open("GET", "details4.xml", true);
-										xhttp.send();
-									}
-								</script>
-       </div>
-        <div class="col-sm-4">
-          <h2>Latest Release</h2>
+					<h2>Latest Release</h2>
 						<p>December 2016</p>
           <h2>Contact</h2>
 						<p>Phone: +353 872345678</p>
-						<p>Email: <a href="719480573@qq.com">719480573@qq.com</a></a>
+						<p>Email: <a href="719480573@qq.com">719480573@qq.com</a>
+       </div>
        </div>
 
-
 		</div>
-
+	</div>
 		</div>
 	</body>
 

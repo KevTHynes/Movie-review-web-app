@@ -40,7 +40,7 @@
 
 		<div class="container">
 			<h1 style="text-align:center">
-					 <img src="/images/gold star.jpg"> Your star review page <img src="/images/gold star.jpg">
+					 <img src="/images/goldstar.jpg" alt="picture"> Your star review page <img src="/images/goldstar.jpg" alt="picture">
 				</h1>
 		</div>
 
