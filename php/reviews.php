@@ -53,10 +53,10 @@
 				<div class="form-group">
 					<label for="movies">Movies: </label>
 					<select class="custom-select" id="movies" name="movie">
-						<option value="Elysium">Elysium</option>
-						<option value="Snitch">Snitch</option>
-						<option value="Fast and furious 6">Fast and furious 6</option>
-						<option value="Pirates Of Caribbean">Pirates Of Caribbean</option>	
+						<option value="Arrival">Arrival</option>
+						<option value="Badsanta2">Bad Santa 2</option>
+						<option value="Sully">Sully</option>
+						<option value="Collateral Beauty">Collateral Beauty</option>	
 					</select>
 				</div>
 				
