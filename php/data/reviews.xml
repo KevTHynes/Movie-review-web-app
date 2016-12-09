@@ -1,11 +1,10 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Reviews>
-  
-  <review>
-  <movie>m1</movie>
-  <rating>1</rating>
-  <text>this is a review</text>
-  </review>
+     <review>
+          <movie>m1</movie>
+          <rating>1</rating>
+           <text>this is a review</text>
+     </review>
   
   <review>
     <movie>m2</movie>

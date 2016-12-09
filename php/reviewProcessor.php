@@ -20,6 +20,6 @@ load Reviews.xml.");
  header("Location: ../thankyou.html");
 } else {
  // nothing happened -- go back to feedback form
- header("Location: ./reviews.php");
+ header("Location: ../latest movie.html");
 }
 ?>
