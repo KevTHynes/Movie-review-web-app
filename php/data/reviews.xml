@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Reviews>
+  
+  <review>
+  <movie>m1</movie>
+  <rating>1</rating>
+  <text>this is a review</text>
+  </review>
+  
+  <review>
+    <movie>m2</movie>
+    <rating>3</rating>
+    <text>this is a better review </text>
+  </review>
+  
+  <review>
+    <movie>m1</movie>
+     <rating>3</rating>
+    <text>this is a review</text>
+  </review>
+  
+  <review>
+    <movie>Arrival</movie>
+     <rating>5</rating>
+    <text>This is a great movie</text>
+  </review>
+</Reviews>

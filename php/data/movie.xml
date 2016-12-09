@@ -1,0 +1,27 @@
+
+<Movies>
+	<movie>
+		<title></title>
+		<rating></rating>
+		<year></year>
+		<rated></rated>
+		<released></released>
+		<runtime></runtime>
+		<genre></genre>
+		<director></director>
+		<writor></writor>
+		<actors></actors>
+		<plot></plot>
+		<language></language>
+		<country></country>
+		<awards></awards>
+		<poster></poster>
+		<reviews>
+			<r>
+				<name>
+				<review>
+				<rating>
+			</r>
+		</reviews>
+	</movie>
+</Movies>

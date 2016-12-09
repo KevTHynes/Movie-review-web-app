@@ -16,33 +16,40 @@
 		<div class="main">
 			<h1 style="text-align:center;color:green;">International 5 star Movie Review</h1>
 		</div>
-		<nav class="navbar navbar-inverse  ">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="index.html">Home</a>
-				</div>
-				<ul class="nav navbar-nav">
-					<li><a href="../latest movie.html">Latest Movies</a></li>
-
-				</ul>
-				<form class="navbar-form navbar-left">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
+	<nav class="navbar navbar-inverse  ">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="index.html">Home</a>
 					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
-				</form>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-					<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-				</ul>
-			</div>
-		</nav>
+					<div>
+					<ul class="nav navbar-nav">
+						<li><a href="latest movie.html">Latest Movies</a></li>
+					</ul>
+						</div>
+					
+					<div class="navbar-header">
+						<a class="navbar-brand" href="php/reviews.php">Review a movie</a>
+					</div>
+					
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+						<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					</ul>
+				</div>
+			</nav>
+
 
 		<div id="site_content">
 		</div>
 
 		<div class="text-center">
-			<h1><img src="/images/gold star.jpg"> Your star review page <img src="/images/gold star.jpg"></h1>
+			<h1> <img src="/images/gold star.jpg"> Your star review page <img src="/images/gold star.jpg"></h1>
 		</div>
 
 		<div class="container">
