@@ -8,7 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
 </head>
 
 <body>
@@ -82,7 +83,8 @@
 		<div class="container">
 
 			<!-- form -->
-			<form method="post" name="Form1" onSubmit="return validateForm()" action="reviewProcessor.php">
+			<!-- <form method="post" name="Form1" onSubmit="return validateForm()" action="reviewProcessor.php"> -->
+			<form method="post" name="Form1" id="reviewForm" action="reviewProcessor.php">
 
 				<div class="form-group">
 					<label for="name">Enter your name: </label>
@@ -122,6 +124,22 @@
 				<input id="submit" name="submit" type="submit" value="Post" class="btn btn-primary">
 
 			</form>
+						<script type="text/javascript">
+				$(function() {
+					$("#reviewForm").validate({
+						rules: {
+							"name": "required",
+							"movie" : "required",
+							"rating" : "required",
+							"text" : "required"
+						},
+						// messages: {},
+						submitHandler: function(form) {
+							form.submit();
+						}
+					});
+				});
+			</script>
 
 		</div>
 	<hr/>
