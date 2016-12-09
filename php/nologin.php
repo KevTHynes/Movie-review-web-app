@@ -42,7 +42,6 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <ul class="nav navbar-nav">
       <li><a href="nologin.php">Latest Movies</a></li>
 			<li><a href="nologin.php">Review a movie</a></li>
-      
     </ul>
     <form class="navbar-form navbar-left">
       <div class="form-group">
@@ -51,8 +50,8 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
     <ul class="nav navbar-nav navbar-right">
-        <li><a href="account.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
   </div>
 </nav>
@@ -68,7 +67,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <div class="sidebar_container">       
 			<div class="sidebar">
 			  <div class="sidebar_item" style= "color:red;text-align:center;width:100%;height:100px;font-style:italic;font-weight:bold;">
-				<h1 >	Welcome to our  website</h1>
+				<h1 >	Please login first!</h1>
 			  </div>
 			  </div>
 	
@@ -136,5 +135,3 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	  
 </body>
 </html>
-  
- 

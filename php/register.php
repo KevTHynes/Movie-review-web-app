@@ -58,9 +58,9 @@ if(isset($_POST['register'])){
 					<a class="navbar-brand" href="index.html">Home</a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li><a href="latest movie.html">Latest Movies</a></li>
-
-				</ul>
+      		<li><a href="nologin.php">Latest Movies</a></li>
+					<li><a href="nologin.php">Review a movie</a></li>   
+    		</ul>
 				<form class="navbar-form navbar-left">
 					<div class="form-group">
 						<input type="text" class="form-control" placeholder="Search">
