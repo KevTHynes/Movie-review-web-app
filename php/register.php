@@ -61,12 +61,7 @@ if(isset($_POST['register'])){
       		<li><a href="nologin.php">Latest Movies</a></li>
 					<li><a href="nologin.php">Review a movie</a></li>   
     		</ul>
-				<form class="navbar-form navbar-left">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
-					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
-				</form>
+			
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 					<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>

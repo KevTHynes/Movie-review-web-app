@@ -43,12 +43,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <li><a href="nologin.php">Latest Movies</a></li>
 			<li><a href="nologin.php">Review a movie</a></li>
     </ul>
-    <form class="navbar-form navbar-left">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+    
     <ul class="nav navbar-nav navbar-right">
         <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -98,13 +93,6 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <input type="password" name="password" class="form-control" id="pwd" placeholder="Enter password">
     </div>
   </div>
-  <div class="form-group"> 
-    <div class="col-sm-offset-2 col-sm-10">
-      <div class="checkbox">
-        <label><input type="checkbox"> Remember me</label>
-      </div>
-    </div>
-  </div>
 	
   <div class="form-group"> 
     <div class="col-sm-offset-2 col-sm-10">
@@ -117,9 +105,6 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 						Don't have an account?<a href="register.php"> Sign Up</a>
 						</h1>
 				</div>
-				</div>
-				<div class="login-help">
-					<p>Forgot your password? <a href="changepassword.php">Click here to reset your Password</a>.</p>
 				</div>
 				
 				

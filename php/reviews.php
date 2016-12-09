@@ -19,28 +19,22 @@
 		<nav class="navbar navbar-inverse  ">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="index.html">Home</a>
+					<a class="navbar-brand" href="index.php">Home</a>
 				</div>
 				<div>
 					<ul class="nav navbar-nav">
-						<li><a href="latest movie.html">Latest Movies</a></li>
+						<li><a href="../latest movie.html">Latest Movies</a></li>
 					</ul>
 				</div>
 
 				<div class="navbar-header">
-					<a class="navbar-brand" href="php/reviews.php">Review a movie</a>
+					<a class="navbar-brand" href="reviews.php">Review a movie</a>
 				</div>
 
-				<form class="navbar-form navbar-left">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
-					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
-				</form>
+				
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-					<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-				</ul>
+						<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+					</ul>
 			</div>
 		</nav>
 
@@ -57,51 +51,48 @@
 					<thead>
 						<tr>
 							<th>#</th>
+							<th>Reviewers Name</th>
 							<th>Movies</th>
 							<th>Star Rating</th>
-							<th>Your review</th>
+							<th>Your Review</th>
 						</tr>
 					</thead>
 					<tbody>
 						<?PHP
-  						 $xml=simplexml_load_file("../data/reviews.xml") or die("ERROR: Cannot load reviews.xml file.");
+  						$xml=simplexml_load_file("../data/reviews.xml") or die("ERROR: Cannot load reviews.xml file.");
+ 							$n = 1; // simple counter
+ 							foreach($xml->children() as $review) {
+ 								echo "<tr>"; // beginning of row
+								echo "<th scope=\"row\">" . $n . "</th>";
 
- 									$n = 1; // simple counter
+ 								foreach($review->children() as $child){
+									 echo "<td>" . $child . "</td>";
+					 			}
 
- foreach($xml->children() as $review) {
+								echo "</tr>"; // end of row
+ 								$n++;
+	 						}
 
- echo "<tr>"; // beginning of row
- echo "<th scope=\"row\">" . $n . "</th>";
-
- foreach($review->children() as $child){
- echo "<td>" . $child . "</td>";
- }
-
- echo "</tr>"; // end of row
- $n++;
- }
-
- ?>
+ 						?>
 
 					</tbody>
 				</table>
 			</div>
 		</div>
-
 		<div class="container">
 
 			<!-- form -->
-			<form method="post" action="reviewProcessor.php">
-				
+			<form method="post" name="Form1" onSubmit="return validateForm()" action="reviewProcessor.php">
+
 				<div class="form-group">
-						<label for="name" >Enter your name: </label>
+					<label for="name">Enter your name: </label>
 					<input name="name" class="form-control" id="pwd" placeholder="Set name to anything!" style="width:30%">
 				</div>
 
 				<div class="form-group">
 					<label for="movies">Movies: </label>
 					<select class="custom-select" id="movies" name="movie">
-						<option>None</option>
+						<option value="Select a movie">None</option>
 						<option value="Arrival">Arrival</option>
 						<option value="Badsanta2">Bad Santa 2</option>
 						<option value="Sully">Sully</option>
@@ -111,7 +102,7 @@
 
 				<div class="form-group">
 					<label for="rating">Star rating:</label>
-					<label class="radio-inline"><input type="radio" name="rating"
+					<label class="radio-inline" name="star"><input type="radio" name="rating"
 					value="1">1 star</label>
 					<label class="radio-inline"><input type="radio" name="rating"
 					value="2">2 stars</label>
@@ -133,7 +124,7 @@
 			</form>
 
 		</div>
-
+	<hr/>
 		<a href="php/changepassword.php">Change Password</a>
 		<a href="php/logout.php">Logout</a>
 </body>

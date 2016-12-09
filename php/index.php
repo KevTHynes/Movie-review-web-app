@@ -28,26 +28,20 @@ if(!file_exists("../data/user.xml")){
 			<nav class="navbar navbar-inverse  ">
 				<div class="container-fluid">
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">Home</a>
+						<a class="navbar-brand" href="index.php">Home</a>
 					</div>
 					
 					<ul class="nav navbar-nav">
-						<li><a href="latest movie.html">Latest Movies</a></li>
+						<li><a href="../latest movie.html">Latest Movies</a></li>
 					</ul>
 					
 					<div class="navbar-header">
-						<a class="navbar-brand" href="php/reviews.php">Review a movie</a>
+						<a class="navbar-brand" href="reviews.php">Review a movie</a>
 					</div>
 					
-					<form class="navbar-form navbar-left">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
-						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
-					</form>
+					
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="php/register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-						<li><a href="php/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -116,8 +110,7 @@ if(!file_exists("../data/user.xml")){
 									</script>
 					</div>
 					<div class="col-sm-4">
-						<h2>Message</h2>
-						<p>Welcome to our new website</p>
+						<h2/>Welcome</h2/>
 						<?php echo $_SESSION['username']; ?> to our new website</p>
 						<hr />
 						<a href="changepassword.php">Change Password</a>

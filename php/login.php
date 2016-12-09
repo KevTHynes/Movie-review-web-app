@@ -44,12 +44,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 			<li><a href="nologin.php">Review a movie</a></li>
       
     </ul>
-    <form class="navbar-form navbar-left">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+    
     <ul class="nav navbar-nav navbar-right">
         <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -68,7 +63,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <div class="sidebar_container">       
 			<div class="sidebar">
 			  <div class="sidebar_item" style= "color:red;text-align:center;width:100%;height:100px;font-style:italic;font-weight:bold;">
-				<h1 >	Welcome to our  website</h1>
+				<h1>	Welcome to our  website</h1>
 			  </div>
 			  </div>
 	
@@ -76,7 +71,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<div class="content_item">
 		<?php
 		if($error){
-			echo '*Invalid username and/or password';
+			echo '<h3>*Invalid username and/or password</h3>';
 		}
 		
 		?>
@@ -99,13 +94,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <input type="password" name="password" class="form-control" id="pwd" placeholder="Enter password">
     </div>
   </div>
-  <div class="form-group"> 
-    <div class="col-sm-offset-2 col-sm-10">
-      <div class="checkbox">
-        <label><input type="checkbox"> Remember me</label>
-      </div>
-    </div>
-  </div>
+  
 	
   <div class="form-group"> 
     <div class="col-sm-offset-2 col-sm-10">
@@ -118,12 +107,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 						Don't have an account?<a href="register.php"> Sign Up</a>
 						</h1>
 				</div>
-				</div>
-				<div class="login-help">
-					<p>Forgot your password? <a href="changepassword.php">Click here to reset your Password</a>.</p>
-				</div>
-				
-				
+				</div>								
 			</section>
 	
 			  
