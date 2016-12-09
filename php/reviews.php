@@ -92,6 +92,11 @@
 
 			<!-- form -->
 			<form method="post" action="reviewProcessor.php">
+				
+				<div class="form-group">
+						<label for="name" >Enter your name: </label>
+					<input name="name" class="form-control" id="pwd" placeholder="Set name to anything!" style="width:30%">
+				</div>
 
 				<div class="form-group">
 					<label for="movies">Movies: </label>

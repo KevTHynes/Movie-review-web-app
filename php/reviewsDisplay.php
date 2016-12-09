@@ -44,9 +44,10 @@
  						<thead>
  							<tr>
 					 		<th>#</th>
+							<th>Name</th>
 							 <th>Movies</th>
+								<th>Your review</th>
 							 <th>Star Rating</th>
- 								<th>Your review</th>
 							 </tr>
 					 </thead>
  					<tbody>
