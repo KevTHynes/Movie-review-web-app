@@ -51,7 +51,7 @@
 					 </thead>
  					<tbody>
  						<?PHP
-  						 $xml=simplexml_load_file("./data/reviews.xml") or die("ERROR: Cannot load reviews.xml file.");
+  						 $xml=simplexml_load_file("../data/reviews.xml") or die("ERROR: Cannot load reviews.xml file.");
 
  									$n = 1; // simple counter
 

@@ -1,10 +1,10 @@
 <?php
 if (isset($_POST['submit'])) {
-   $movies = $_POST['movies'];
+   $movie = $_POST['movie'];
    $rating = $_POST['rating'];
    $text = $_POST['text'];
 // load previous XML from file
- $xml = simplexml_load_file("./data/reviews.xml") or die("ERROR: Cannot
+ $xml = simplexml_load_file("../data/reviews.xml") or die("ERROR: Cannot
 load Reviews.xml.");
 
  // add a new feedback node

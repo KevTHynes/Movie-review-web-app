@@ -36,7 +36,7 @@ if(!file_exists("../data/user.xml")){
 					</ul>
 					
 					<div class="navbar-header">
-						<a class="navbar-brand" href="reviews.php">Review a movie</a>
+						<a class="navbar-brand" href="php/reviews.php">Review a movie</a>
 					</div>
 					
 					<form class="navbar-form navbar-left">
@@ -46,8 +46,8 @@ if(!file_exists("../data/user.xml")){
 						<button type="submit" class="btn btn-default">Submit</button>
 					</form>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-						<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						<li><a href="php/register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+						<li><a href="php/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -55,49 +55,28 @@ if(!file_exists("../data/user.xml")){
 			<div id="site_content">
 
 				<div class="slideshow">
-					<ul class="slideshow">
+					
 						<li class="show"><img width="100%" height="300" src="/images/home_1.jpg" alt="&quot;Rent all the latest DVD&quot;" /></li>
-					</ul>
+					
 				</div>
 			</div>
-			<div class="sidebar_container">
-				<div class="sidebar">
-					<div class="sidebar_item">
-						<h2>Message</h2>
-						<p>Welcome</p>
+			
+			
+			
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1>Welcome To Our Website</h1>
 					</div>
 				</div>
-				<div class="sidebar">
-					<div class="sidebar_item">
-						<h2>Latest Release</h2>
-						<p>December 2016</p>
-					</div>
-				</div>
-				<div class="sidebar">
-					<div class="sidebar_item">
-						<h2>Contact</h2>
-						<p>Phone: +353 872345678</p>
-						<p>Email: <a href="719480573@qq.com">719480573@qq.com</a></a>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div id="content">
-				<div class="content_item">
-					<h1>Welcome To Our Website</h1>
-
-
-
-
-					<section>
-						<div>
-							<div class="img">
-								<a target="_blank"><img src="/images/2.jpg" alt="Movies" width="300" height="300"></a>
-								<div class="desc"><b>Elysium</b></div>
+				
+				
+				<div class="row">
+					<div class="col-sm-4">
+						<a target="_blank"><img src="/images/2.jpg" alt="Movies" width="300" height="300"></a>
+								<p><b>Elysium</b></p>
 								<!--//source: http://www.w3schools.com/ajax/tryit.asp?filename=tryajax_first-->
-
-								<body>
 									<div id="demo"></div>
 
 									<button type="button" onclick="loadXMLDoc()">View Details</button>
@@ -114,17 +93,11 @@ if(!file_exists("../data/user.xml")){
 											xhttp.send();
 										}
 									</script>
-								</body>
+					</div>
+					<div class="col-sm-4">
+						<a target="_blank"><img src="/images/3.jpg" alt="Movies" width="300" height="300" href="https://www.youtube.com/watch?v=Aojd0pE_MJ8"></a>
+								<p><b>Snitch</b></p>
 
-							</div>
-
-
-
-							<div class="img">
-								<a target="_blank"><img src="/images/3.jpg" alt="Movies" width="300" height="300" href="https://www.youtube.com/watch?v=Aojd0pE_MJ8"></a>
-								<div class="desc"><b>Snitch</b></div>
-
-								<body>
 									<div id="demo1"></div>
 
 									<button type="button" onclick="loadXMLDoc1()">View Details</button>
@@ -141,67 +114,80 @@ if(!file_exists("../data/user.xml")){
 											xhttp.send();
 										}
 									</script>
-								</body>
+					</div>
+					<div class="col-sm-4">
+						<h2>Message</h2>
+						<p>Welcome to our new website</p>
+						<?php echo $_SESSION['username']; ?> to our new website</p>
+						<hr />
+						<a href="changepassword.php">Change Password</a>
+						<a href="logout.php">Logout</a>
+					</div>
+				</div>
+		
+		
+		
+		
+				<div class="row">
+							<div class="col-sm-4">
+								<a target="_blank"><img src="/images/4.jpg" alt="Movies" width="300" height="300"></a>
+									<div class="desc"><b>FAST AND FURIOUS 6</b></div>
+
+
+										<div id="demo2"></div>
+
+										<button type="button" onclick="loadXMLDoc2()">View Details</button>
+
+										<script>
+											function loadXMLDoc2() {
+												var xhttp = new XMLHttpRequest();
+												xhttp.onreadystatechange = function() {
+													if (xhttp.readyState == 4 && xhttp.status == 200) {
+														document.getElementById("demo2").innerHTML = xhttp.responseText;
+													}
+												};
+												xhttp.open("GET", "details3.xml", true);
+												xhttp.send();
+											}
+										</script>
+							</div>
+							<div class="col-sm-4">
+								<a target="_blank"><img src="/images/PiratesOfCaribbean.jpg" alt="Movies" width="300" height="300"></a>
+									<div class="desc"><b>Pirates Of Caribbean</b></div>
+
+
+										<div id="demo3"></div>
+
+										<button type="button" onclick="loadXMLDoc3()">View Details</button>
+
+										<script>
+											function loadXMLDoc3() {
+												var xhttp = new XMLHttpRequest();
+												xhttp.onreadystatechange = function() {
+													if (xhttp.readyState == 4 && xhttp.status == 200) {
+														document.getElementById("demo3").innerHTML = xhttp.responseText;
+													}
+												};
+												xhttp.open("GET", "details4.xml", true);
+												xhttp.send();
+											}
+										</script>
+							</div>
+							<div class="col-sm-4">
+								<h2>Latest Release</h2>
+								<p>December 2016</p>
+								<h2>Contact</h2>
+								<p>Phone: +353 872345678</p>
+								<p>Email: <a href="719480573@qq.com">719480573@qq.com</a></a>
+								</p>
 							</div>
 						</div>
-						<div class="img">
-							<a target="_blank"><img src="/images/4.jpg" alt="Movies" width="300" height="300"></a>
-							<div class="desc"><b>FAST AND FURIOUS 6</b></div>
-
-							<body>
-								<div id="demo2"></div>
-
-								<button type="button" onclick="loadXMLDoc2()">View Details</button>
-
-								<script>
-									function loadXMLDoc2() {
-										var xhttp = new XMLHttpRequest();
-										xhttp.onreadystatechange = function() {
-											if (xhttp.readyState == 4 && xhttp.status == 200) {
-												document.getElementById("demo2").innerHTML = xhttp.responseText;
-											}
-										};
-										xhttp.open("GET", "details3.xml", true);
-										xhttp.send();
-									}
-								</script>
-							</body>
-						</div>
-						<div class="img">
-							<a target="_blank"><img src="/images/PiratesOfCaribbean.jpg" alt="Movies" width="300" height="300"></a>
-							<div class="desc"><b>Pirates Of Caribbean</b></div>
-
-							<body>
-								<div id="demo3"></div>
-
-								<button type="button" onclick="loadXMLDoc3()">View Details</button>
-
-								<script>
-									function loadXMLDoc3() {
-										var xhttp = new XMLHttpRequest();
-										xhttp.onreadystatechange = function() {
-											if (xhttp.readyState == 4 && xhttp.status == 200) {
-												document.getElementById("demo3").innerHTML = xhttp.responseText;
-											}
-										};
-										xhttp.open("GET", "details4.xml", true);
-										xhttp.send();
-									}
-								</script>
-							</body>
-
-						</div>
-
-					</section>
-
 				</div>
-			</div>
-		</div>
 
 		</div>
-		<hr />
-		<a href="changepassword.php">Change Password</a>
-		<a href="logout.php">Logout</a>
 	</body>
 
+<hr />
+		<a href="changepassword.php">Change Password</a>
+		<a href="logout.php">Logout</a>
 	</html>

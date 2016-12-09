@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Reviews>
+  
+  <review>
+    <movie>Arrival</movie>
+     <rating>5</rating>
+    <text>This is a great movie</text>
+  </review>
+<review><movie>Sully</movie><rating>4</rating><text>good!</text></review><review><movie>Badsanta2</movie><rating>5</rating><text>very funny!!!!</text></review><review><movie>Collateral Beauty</movie><rating>1</rating><text>boring</text></review><review><movie>Arrival</movie><rating/><text/></review><review><movie/><rating/><text/></review><review><movie>None</movie><rating/><text/></review></Reviews>
