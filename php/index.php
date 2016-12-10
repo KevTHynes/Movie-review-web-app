@@ -64,12 +64,12 @@ if(!file_exists("../data/user.xml")){
 
 			 <div class="row">
 					<div class="col-sm-8">
-					 <img width="100%" height="300" src="/images/greed.jpg" alt="greed" />
+					 <img width="100%" height="400" src="/images/greed.jpg" alt="greed" />
 				 </div>
 
 					<div class="col-sm-4">
 						<h2>Message</h2>
-						<p>>Welcome<?php echo $_SESSION['username']; ?> to our new website</p>
+						<p>Welcome! <?php echo $_SESSION['username']; ?> to our new website</p>
 						<hr />
 						<a href="changepassword.php">Change Password</a>
 						<a href="logout.php">Logout</a>
