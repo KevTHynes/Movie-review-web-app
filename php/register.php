@@ -72,9 +72,9 @@ if(isset($_POST['register'])){
 		<div id="site_content">
 
 			<div class="slideshow">
-				<ul class="slideshow">
+		
 					<li class="show"><img width="100%" height="300" src="/images/home_1.jpg" alt="&quot;Rent all the latest DVD&quot;" /></li>
-				</ul>
+			
 			</div>
 		</div>
 		<div class="sidebar_container">
