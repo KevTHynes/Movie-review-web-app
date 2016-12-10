@@ -68,8 +68,8 @@ if(!file_exists("../data/user.xml")){
 				 </div>
 
 					<div class="col-sm-4">
-						<h2/>Welcome</h2/>
-						<?php echo $_SESSION['username']; ?> to our new website</p>
+						<h2>Message</h2>
+						<p>>Welcome<?php echo $_SESSION['username']; ?> to our new website</p>
 						<hr />
 						<a href="changepassword.php">Change Password</a>
 						<a href="logout.php">Logout</a>
